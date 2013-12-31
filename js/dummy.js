@@ -1,7 +1,7 @@
 ﻿var SILLY = (function (module) {
 
     module.DoIt = function(resultsObject) {
-        resultsObject.prepend(Date() + '<br />');
+        resultsObject.append(Date() + '<br />');
     };
 
     return module;
