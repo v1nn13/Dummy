@@ -1,0 +1,30 @@
+﻿<!DOCTYPE html>
+<html>
+    
+    <head>
+        <title>PhoneGap Dummy</title>
+    </head>
+
+    <body>
+        
+        <button id="button_DoIt">Do It!</button>
+        <button id="button_Clear">Clear</button>
+        <div id="container_Results"></div>
+    
+        <script src="js/zepto.js"></script>
+        <script src="js/dummy.js"></script>
+        <script type="text/javascript">
+
+            $('#button_DoIt').click(function () {
+                SILLY.DoIt($('#container_Results'));
+            });
+
+            $('#button_Clear').click(function () {
+                $('#container_Results').html('');
+            });
+
+        </script>
+
+    </body>
+
+</html>
